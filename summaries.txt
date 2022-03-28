@@ -6,7 +6,7 @@ Dep. Variable:              SalePrice   R-squared:                       0.846
 Model:                            OLS   Adj. R-squared:                  0.839
 Method:                 Least Squares   F-statistic:                     123.4
 Date:                Sun, 27 Mar 2022   Prob (F-statistic):          1.50e-259
-Time:                        21:13:37   Log-Likelihood:                -8611.7
+Time:                        21:37:41   Log-Likelihood:                -8611.7
 No. Observations:                 730   AIC:                         1.729e+04
 Df Residuals:                     698   BIC:                         1.743e+04
 Df Model:                          31                                         
@@ -93,6 +93,7 @@ Remove BedroomAbvGr	-- Collinearity --	Coll. with TotRmsAbvGrd => 0.158 < 0.578
 Remove GarageArea	-- Collinearity --	Coll. with GarageCars => 0.663 < 0.676
 
 
+Independent variables for next iteration: ['const', 'LotArea', 'OverallQual', 'YearBuilt', 'YearRemodAdd', 'BsmtFinSF1', 'TotalBsmtSF', 'GrLivArea', 'WoodDeckSF']
 -------------------------------------ITERATION 2-------------------------------------
 
                             OLS Regression Results                            
@@ -101,7 +102,7 @@ Dep. Variable:              SalePrice   R-squared:                       0.819
 Model:                            OLS   Adj. R-squared:                  0.817
 Method:                 Least Squares   F-statistic:                     408.8
 Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
-Time:                        21:13:37   Log-Likelihood:                -8669.2
+Time:                        21:37:41   Log-Likelihood:                -8669.2
 No. Observations:                 730   AIC:                         1.736e+04
 Df Residuals:                     721   BIC:                         1.740e+04
 Df Model:                           8                                         
@@ -137,6 +138,7 @@ strong multicollinearity or other numerical problems.
 			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
 
 
+Independent variables for next iteration: ['const', 'LotArea', 'OverallQual', 'YearBuilt', 'YearRemodAdd', 'BsmtFinSF1', 'TotalBsmtSF', 'GrLivArea', 'WoodDeckSF']
 -------------------------------------ITERATION 3-------------------------------------
 
                             OLS Regression Results                            
@@ -145,7 +147,7 @@ Dep. Variable:              SalePrice   R-squared:                       0.819
 Model:                            OLS   Adj. R-squared:                  0.817
 Method:                 Least Squares   F-statistic:                     408.8
 Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
-Time:                        21:13:37   Log-Likelihood:                -8669.2
+Time:                        21:37:41   Log-Likelihood:                -8669.2
 No. Observations:                 730   AIC:                         1.736e+04
 Df Residuals:                     721   BIC:                         1.740e+04
 Df Model:                           8                                         
@@ -181,6 +183,7 @@ strong multicollinearity or other numerical problems.
 			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
 
 
+Independent variables for next iteration: ['const', 'LotArea', 'OverallQual', 'YearBuilt', 'YearRemodAdd', 'BsmtFinSF1', 'TotalBsmtSF', 'GrLivArea', 'WoodDeckSF']
 -------------------------------------ITERATION 4-------------------------------------
 
                             OLS Regression Results                            
@@ -189,7 +192,7 @@ Dep. Variable:              SalePrice   R-squared:                       0.819
 Model:                            OLS   Adj. R-squared:                  0.817
 Method:                 Least Squares   F-statistic:                     408.8
 Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
-Time:                        21:13:37   Log-Likelihood:                -8669.2
+Time:                        21:37:41   Log-Likelihood:                -8669.2
 No. Observations:                 730   AIC:                         1.736e+04
 Df Residuals:                     721   BIC:                         1.740e+04
 Df Model:                           8                                         
@@ -225,3 +228,4 @@ strong multicollinearity or other numerical problems.
 			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
 
 
+Independent variables for next iteration: ['const', 'LotArea', 'OverallQual', 'YearBuilt', 'YearRemodAdd', 'BsmtFinSF1', 'TotalBsmtSF', 'GrLivArea', 'WoodDeckSF']
