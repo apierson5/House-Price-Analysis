@@ -1,0 +1,64 @@
+----------ITERATION 1----------
+avg_val_errs[i] = 21424
+mapes[i] = 12.67 %
+r2_arr[i] = 0.8456952940859579
+
+---MODEL COEFFICIENTS ITERATION 1---
+const : 1376833.246
+LotArea : -144.983
+OverallQual : 0.417
+YearBuilt : 17122.843
+YearRemodAdd : 3190.501
+BsmtFinSF1 : 342.534
+TotalBsmtSF : 275.907
+GrLivArea : 15.939
+WoodDeckSF : 3.225
+
+----------ITERATION 2----------
+avg_val_errs[i] = 22567
+mapes[i] = 13.779 %
+r2_arr[i] = 0.819350042394551
+
+---MODEL COEFFICIENTS ITERATION 2---
+const : -1313217.693
+LotArea : 0.497
+OverallQual : 21127.237
+YearBuilt : 247.416
+YearRemodAdd : 379.134
+BsmtFinSF1 : 23.703
+TotalBsmtSF : 24.545
+GrLivArea : 53.188
+WoodDeckSF : 30.732
+
+----------ITERATION 3----------
+avg_val_errs[i] = 22567
+mapes[i] = 13.779 %
+r2_arr[i] = 0.819350042394551
+
+---MODEL COEFFICIENTS ITERATION 3---
+const : -1313217.693
+LotArea : 0.497
+OverallQual : 21127.237
+YearBuilt : 247.416
+YearRemodAdd : 379.134
+BsmtFinSF1 : 23.703
+TotalBsmtSF : 24.545
+GrLivArea : 53.188
+WoodDeckSF : 30.732
+
+----------ITERATION 4----------
+avg_val_errs[i] = 22567
+mapes[i] = 13.779 %
+r2_arr[i] = 0.819350042394551
+
+---MODEL COEFFICIENTS ITERATION 4---
+const : -1313217.693
+LotArea : 0.497
+OverallQual : 21127.237
+YearBuilt : 247.416
+YearRemodAdd : 379.134
+BsmtFinSF1 : 23.703
+TotalBsmtSF : 24.545
+GrLivArea : 53.188
+WoodDeckSF : 30.732
+

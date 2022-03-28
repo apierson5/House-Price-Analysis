@@ -1,0 +1,227 @@
+-------------------------------------ITERATION 1-------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              SalePrice   R-squared:                       0.846
+Model:                            OLS   Adj. R-squared:                  0.839
+Method:                 Least Squares   F-statistic:                     123.4
+Date:                Sun, 27 Mar 2022   Prob (F-statistic):          1.50e-259
+Time:                        21:13:37   Log-Likelihood:                -8611.7
+No. Observations:                 730   AIC:                         1.729e+04
+Df Residuals:                     698   BIC:                         1.743e+04
+Df Model:                          31                                         
+Covariance Type:            nonrobust                                         
+=================================================================================
+                    coef    std err          t      P>|t|      [0.025      0.975]
+---------------------------------------------------------------------------------
+const          1.377e+06   1.91e+06      0.720      0.471   -2.38e+06    5.13e+06
+MSSubClass     -144.9830     34.874     -4.157      0.000    -213.453     -76.513
+LotArea           0.4174      0.103      4.035      0.000       0.214       0.621
+OverallQual    1.712e+04   1593.419     10.746      0.000     1.4e+04    2.03e+04
+OverallCond    3190.5008   1369.950      2.329      0.020     500.785    5880.217
+YearBuilt       342.5339     81.709      4.192      0.000     182.109     502.959
+YearRemodAdd    275.9073     86.718      3.182      0.002     105.648     446.167
+BsmtFinSF1       15.9388      3.469      4.594      0.000       9.127      22.751
+BsmtFinSF2        3.2253      6.022      0.536      0.592      -8.598      15.048
+BsmtUnfSF        -1.2237      3.370     -0.363      0.717      -7.840       5.392
+TotalBsmtSF      17.9404      4.858      3.693      0.000       8.402      27.478
+1stFlrSF         11.6133      7.736      1.501      0.134      -3.575      26.802
+2ndFlrSF         15.8921      7.006      2.268      0.024       2.137      29.647
+LowQualFinSF     15.0593     17.685      0.852      0.395     -19.662      49.780
+GrLivArea        42.5647      7.010      6.072      0.000      28.802      56.327
+BsmtFullBath   2399.9929   3612.260      0.664      0.507   -4692.204    9492.190
+BsmtHalfBath   2304.0920   5586.152      0.412      0.680   -8663.583    1.33e+04
+FullBath      -2357.0831   3832.328     -0.615      0.539   -9881.354    5167.188
+HalfBath      -4002.9381   3623.680     -1.105      0.270   -1.11e+04    3111.682
+BedroomAbvGr  -1.315e+04   2253.163     -5.837      0.000   -1.76e+04   -8728.409
+KitchenAbvGr  -8725.4618   7282.478     -1.198      0.231    -2.3e+04    5572.726
+TotRmsAbvGrd   6057.7679   1726.053      3.510      0.000    2668.890    9446.645
+Fireplaces     3516.0967   2304.821      1.526      0.128   -1009.117    8041.310
+GarageCars      384.6514   4051.875      0.095      0.924   -7570.673    8339.976
+GarageArea       33.1787     13.846      2.396      0.017       5.995      60.363
+WoodDeckSF       23.4836     11.061      2.123      0.034       1.767      45.200
+OpenPorchSF     -10.4291     20.700     -0.504      0.615     -51.071      30.213
+EnclosedPorch     6.1959     23.735      0.261      0.794     -40.405      52.796
+3SsnPorch        -1.8036     35.608     -0.051      0.960     -71.714      68.107
+ScreenPorch      47.3780     23.120      2.049      0.041       1.985      92.771
+PoolArea       -164.6771     73.039     -2.255      0.024    -308.079     -21.275
+MiscVal          -0.2407      2.040     -0.118      0.906      -4.247       3.765
+MoSold         -560.0920    455.634     -1.229      0.219   -1454.670     334.486
+YrSold        -1320.7851    954.883     -1.383      0.167   -3195.573     554.002
+==============================================================================
+Omnibus:                      310.274   Durbin-Watson:                   1.999
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            26978.972
+Skew:                          -0.960   Prob(JB):                         0.00
+Kurtosis:                      32.720   Cond. No.                     1.42e+16
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The smallest eigenvalue is 1.08e-21. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
+
+
+			----- ELIMINATE BY P-VALUE -----
+Remove BsmtFinSF2	-- P-Value --	p_val = 0.592 > 0.1
+Remove BsmtUnfSF	-- P-Value --	p_val = 0.717 > 0.1
+Remove 1stFlrSF	-- P-Value --	p_val = 0.134 > 0.1
+Remove LowQualFinSF	-- P-Value --	p_val = 0.395 > 0.1
+Remove BsmtFullBath	-- P-Value --	p_val = 0.507 > 0.1
+Remove BsmtHalfBath	-- P-Value --	p_val = 0.68 > 0.1
+Remove FullBath	-- P-Value --	p_val = 0.539 > 0.1
+Remove HalfBath	-- P-Value --	p_val = 0.27 > 0.1
+Remove KitchenAbvGr	-- P-Value --	p_val = 0.231 > 0.1
+Remove Fireplaces	-- P-Value --	p_val = 0.128 > 0.1
+Remove GarageCars	-- P-Value --	p_val = 0.924 > 0.1
+Remove OpenPorchSF	-- P-Value --	p_val = 0.615 > 0.1
+Remove EnclosedPorch	-- P-Value --	p_val = 0.794 > 0.1
+Remove 3SsnPorch	-- P-Value --	p_val = 0.96 > 0.1
+Remove MiscVal	-- P-Value --	p_val = 0.906 > 0.1
+Remove MoSold	-- P-Value --	p_val = 0.219 > 0.1
+Remove YrSold	-- P-Value --	p_val = 0.167 > 0.1
+
+
+			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
+Remove MSSubClass	-- Correlation --	-0.091 < 0.25
+Remove OverallCond	-- Correlation --	-0.088 < 0.25
+Remove BedroomAbvGr	-- Correlation --	0.158 < 0.25
+Remove ScreenPorch	-- Correlation --	0.124 < 0.25
+Remove PoolArea	-- Correlation --	0.023 < 0.25
+Remove 2ndFlrSF	-- Collinearity --	Coll. with GrLivArea => 0.321 < 0.739
+Remove TotRmsAbvGrd	-- Collinearity --	Coll. with GrLivArea => 0.578 < 0.739
+Remove BedroomAbvGr	-- Collinearity --	Coll. with TotRmsAbvGrd => 0.158 < 0.578
+Remove GarageArea	-- Collinearity --	Coll. with GarageCars => 0.663 < 0.676
+
+
+-------------------------------------ITERATION 2-------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              SalePrice   R-squared:                       0.819
+Model:                            OLS   Adj. R-squared:                  0.817
+Method:                 Least Squares   F-statistic:                     408.8
+Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
+Time:                        21:13:37   Log-Likelihood:                -8669.2
+No. Observations:                 730   AIC:                         1.736e+04
+Df Residuals:                     721   BIC:                         1.740e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const        -1.313e+06   1.56e+05     -8.398      0.000   -1.62e+06   -1.01e+06
+LotArea          0.4966      0.106      4.672      0.000       0.288       0.705
+OverallQual   2.113e+04   1502.651     14.060      0.000    1.82e+04    2.41e+04
+YearBuilt      247.4158     59.070      4.189      0.000     131.446     363.385
+YearRemodAdd   379.1336     82.412      4.600      0.000     217.337     540.930
+BsmtFinSF1      23.7029      3.453      6.864      0.000      16.924      30.482
+TotalBsmtSF     24.5449      4.243      5.785      0.000      16.215      32.874
+GrLivArea       53.1882      3.364     15.809      0.000      46.583      59.794
+WoodDeckSF      30.7316     11.329      2.713      0.007       8.490      52.973
+==============================================================================
+Omnibus:                      260.388   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            17370.623
+Skew:                          -0.706   Prob(JB):                         0.00
+Kurtosis:                      26.856   Cond. No.                     2.07e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.07e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+			----- ELIMINATE BY P-VALUE -----
+
+
+			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
+
+
+-------------------------------------ITERATION 3-------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              SalePrice   R-squared:                       0.819
+Model:                            OLS   Adj. R-squared:                  0.817
+Method:                 Least Squares   F-statistic:                     408.8
+Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
+Time:                        21:13:37   Log-Likelihood:                -8669.2
+No. Observations:                 730   AIC:                         1.736e+04
+Df Residuals:                     721   BIC:                         1.740e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const        -1.313e+06   1.56e+05     -8.398      0.000   -1.62e+06   -1.01e+06
+LotArea          0.4966      0.106      4.672      0.000       0.288       0.705
+OverallQual   2.113e+04   1502.651     14.060      0.000    1.82e+04    2.41e+04
+YearBuilt      247.4158     59.070      4.189      0.000     131.446     363.385
+YearRemodAdd   379.1336     82.412      4.600      0.000     217.337     540.930
+BsmtFinSF1      23.7029      3.453      6.864      0.000      16.924      30.482
+TotalBsmtSF     24.5449      4.243      5.785      0.000      16.215      32.874
+GrLivArea       53.1882      3.364     15.809      0.000      46.583      59.794
+WoodDeckSF      30.7316     11.329      2.713      0.007       8.490      52.973
+==============================================================================
+Omnibus:                      260.388   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            17370.623
+Skew:                          -0.706   Prob(JB):                         0.00
+Kurtosis:                      26.856   Cond. No.                     2.07e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.07e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+			----- ELIMINATE BY P-VALUE -----
+
+
+			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
+
+
+-------------------------------------ITERATION 4-------------------------------------
+
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:              SalePrice   R-squared:                       0.819
+Model:                            OLS   Adj. R-squared:                  0.817
+Method:                 Least Squares   F-statistic:                     408.8
+Date:                Sun, 27 Mar 2022   Prob (F-statistic):          5.38e-262
+Time:                        21:13:37   Log-Likelihood:                -8669.2
+No. Observations:                 730   AIC:                         1.736e+04
+Df Residuals:                     721   BIC:                         1.740e+04
+Df Model:                           8                                         
+Covariance Type:            nonrobust                                         
+================================================================================
+                   coef    std err          t      P>|t|      [0.025      0.975]
+--------------------------------------------------------------------------------
+const        -1.313e+06   1.56e+05     -8.398      0.000   -1.62e+06   -1.01e+06
+LotArea          0.4966      0.106      4.672      0.000       0.288       0.705
+OverallQual   2.113e+04   1502.651     14.060      0.000    1.82e+04    2.41e+04
+YearBuilt      247.4158     59.070      4.189      0.000     131.446     363.385
+YearRemodAdd   379.1336     82.412      4.600      0.000     217.337     540.930
+BsmtFinSF1      23.7029      3.453      6.864      0.000      16.924      30.482
+TotalBsmtSF     24.5449      4.243      5.785      0.000      16.215      32.874
+GrLivArea       53.1882      3.364     15.809      0.000      46.583      59.794
+WoodDeckSF      30.7316     11.329      2.713      0.007       8.490      52.973
+==============================================================================
+Omnibus:                      260.388   Durbin-Watson:                   2.013
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):            17370.623
+Skew:                          -0.706   Prob(JB):                         0.00
+Kurtosis:                      26.856   Cond. No.                     2.07e+06
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+[2] The condition number is large, 2.07e+06. This might indicate that there are
+strong multicollinearity or other numerical problems.
+
+
+			----- ELIMINATE BY P-VALUE -----
+
+
+			----- ELIMINATE BY CORRELATION / COLLINEARITY -----
+
+
